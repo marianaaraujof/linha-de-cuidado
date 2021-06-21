@@ -1,0 +1,150 @@
+body {
+  font-family: 'Lato', sans-serif !important;
+  font-size: 16px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: antialiased;
+  font-weight: 300;
+}
+header {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+}
+
+h1 {
+  color: #0D4068;
+  font-size: 30px;
+  font-weight: 700 !important;
+  margin-top: 60px !important;
+  text-transform: uppercase;
+}
+
+p {
+  color: #606060;
+  margin-top: 20px;
+  line-height: 22px;
+  font-weight: 400;
+}
+.container {
+  margin: auto;
+  width: 960px;
+}
+
+#divTest {
+  margin-bottom: 80px;
+}
+
+.txt-center {
+  text-align: center;
+
+}
+
+.pic-center {
+  margin: auto;
+  display: block;
+}
+
+
+#cwd-container {
+  color: #606060;
+  font-weight: 400;
+  margin: auto;
+}
+
+#cwd-grid {
+    border: solid 1px black;
+}
+
+#cwd-grid td.cwd-tile-highlight
+{
+    background-color: #6187A2 !important;
+}
+
+#cwd-grid td.cwd-tile-cursor
+{
+    border-color: black !important;
+    background-color: #0D3F68!important;
+    color: black;
+}
+
+#cwd-grid td.cwd-tile-correct
+{
+    background-color: #3DCDAC !important;
+}
+
+#cwd-grid td.cwd-tile-incorrect
+{
+    border-color: #FC4C48 !important;
+}
+
+.cwd-tile {
+    width: 35px;
+    height: 35px;
+    border: solid 1px black;
+    padding: 0;
+    vertical-align: top;
+}
+
+.cwd-tile-letter {
+    text-align: center;
+    font-size: 16px;
+}
+
+#cwd-clue-box {
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: solid 1px #404040;
+    font-size: 105%;
+    font-weight: 400;
+    min-height: 50px;
+    overflow: hidden;
+}
+
+.cwd-clue-highlight
+{
+    font-weight: bold;
+}
+
+.cwd-clues-header {
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 13px;
+    color:#0D4068;
+}
+
+.cwd-clues-header:not(:first-child){
+  padding-top: 20px;
+}
+
+.cwd-clue div {
+    display: table-cell;
+    line-height: 28px;
+}
+
+.cwd-clue-no {
+    width: 25px;
+}
+
+.cwd-clue-text {
+    cursor: pointer;
+}
+
+.cwd-tile-inactive {
+
+}
+
+
+.aux {
+  margin-top: 30px;
+  margin-right: 20px;
+  float: left;
+}
+
+.aux button {
+  margin-top: 30px;
+}
