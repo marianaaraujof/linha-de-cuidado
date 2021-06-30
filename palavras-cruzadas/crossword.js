@@ -547,24 +547,26 @@
                         console.log(clue.answer);
                         tilesToHighlight.addClass("cwd-tile-correct");
 
-                        if (clue.answer == "FISICA") {
-                          $("#myModalfisica").modal("show");
-                        } else if (clue.answer == "SULFATODEMAGNESIO") {
-                          $("#myModalSulfatoMagnesio").modal("show");
-                        } else if (clue.answer == "RINGER") {
-                          $("#myModalRinger").modal("show");
-                        } else if (clue.answer == "FENITOINA") {
-                          $("#myModalFENITOINA").modal("show");
-                        } else if (clue.answer == "CEFTRIAXONA") {
-                          $("#myModalCEFTRIAXONA").modal("show");
-                        } else if (clue.answer == "HIPOTENSAO") {
-                          $("#myModalHIPOTENSAO").modal("show");
-                        } else if (clue.answer == "HIPOGLICEMIA") {
-                          $("#myModalHIPOGLICEMIA").modal("show");
-                        } else if (clue.answer == "METOCLOPRAMIDA") {
-                          $("#myModalMETOCLOPRAMIDA").modal("show");
-                        } else if (clue.answer == "TOSSE") {
-                          $("#myModalTOSSE").modal("show");
+                        if (clue.answer == "CDC") {
+                          $("#myModalcdc").modal("show");
+                        } else if (clue.answer == "LAR") {
+                          $("#myModalLar").modal("show");
+                        } else if (clue.answer == "MENINAS") {
+                          $("#myModalMeninas").modal("show");
+                        } else if (clue.answer == "DOIS") {
+                          $("#myModalDois").modal("show");
+                        } else if (clue.answer == "2030") {
+                          $("#myModal2030").modal("show");
+                        } else if (clue.answer == "TRES") {
+                          $("#myModalTres").modal("show");
+                        } else if (clue.answer == "PERPETRADOR") {
+                          $("#myModalperpetrador").modal("show");
+                        } else if (clue.answer == "ESCOLA") {
+                          $("#myModalEscola").modal("show");
+                        } else if (clue.answer == "AGENDA2030") {
+                          $("#myModalAGENDA2030").modal("show");
+                        } else if (clue.answer == "DEZESSETE") {
+                          $("#myModalDezessete").modal("show");
                         }
                       } else {
                         tilesToHighlight.addClass("cwd-tile-incorrect");
@@ -587,7 +589,7 @@
           $(".cwd-tile-active")
             .find(".cwd-tile-letter")
             .filter(function() {
-              return $(this).text() === " ";
+              return $(this).text() === "Parabéns! Você completou.";
             }).length === 0
         );
       },
