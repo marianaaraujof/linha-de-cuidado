@@ -537,9 +537,6 @@
                         tilesToHighlight = highlightedTiles;
                         if (clue.answer) {
                           canValidate = true;
-                          console.log(clue.answer);
-                          console.log(enteredAnswer);
-                          debugger;
                           correct = clue.answer.toUpperCase() === enteredAnswer;
                         }
                         break;
