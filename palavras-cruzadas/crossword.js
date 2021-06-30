@@ -238,11 +238,12 @@
         if (typeof clue === "object") {
           clueText = clue.text;
           clueAnswer = clue.answer;
+          
           cluePattern = clue.pattern;
-        } else if (typeof clue === "string") {
+        } else if (typeof clue === "string" || dataType === "number") {
           var parts = clue.split("%%");
           clueText = parts[0];
-          if (/[A-Z]/i.test(parts[1])) {
+          if (/[A-Z0-9]/i.test(parts[1])) {
             clueAnswer = parts[1];
           } else {
             cluePattern = parts[1];
@@ -294,9 +295,9 @@
         cluePattern = impl.stringFormat("({0})", cluePattern);
 
         // Strip non-alpha characters from answer so it can be validated.
-        if (clueAnswer) {
-          clueAnswer = clueAnswer.replace(/[^A-Z][0-9]/gi, "");
-        }
+        // if (clueAnswer) {
+        //   clueAnswer = clueAnswer.replace(/[^A-Z][0-9]/gi, "");
+        // }
 
         // TODO: Validate clue pattern against length.
 
@@ -428,9 +429,18 @@
               }
             } else {
               // Check for letter (case insensitive).
-              var charEntered = String.fromCharCode(code).toUpperCase();
+             
 
-              if (/[A-Z]/i.test(charEntered)) {
+              if (code >= 96 && code <= 105) {
+                // Numpad keys
+                code -= 48;
+              }
+
+
+              var charEntered = String.fromCharCode(code).toUpperCase();
+              
+
+              if (/[A-Z0-9]/i.test(charEntered)) {
                 // Write the entered letter into the tile.
                 $(
                   ".cwd-tile-letter",
@@ -527,6 +537,9 @@
                         tilesToHighlight = highlightedTiles;
                         if (clue.answer) {
                           canValidate = true;
+                          console.log(clue.answer);
+                          console.log(enteredAnswer);
+                          debugger;
                           correct = clue.answer.toUpperCase() === enteredAnswer;
                         }
                         break;
@@ -534,7 +547,7 @@
 
                     if (canValidate) {
                       if (correct) {
-                        // console.log(clue.answer);
+                        console.log(clue.answer);
                         tilesToHighlight.addClass("cwd-tile-correct");
 
                         if (clue.answer == "FISICA") {
