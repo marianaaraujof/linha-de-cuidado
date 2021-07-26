@@ -17,15 +17,12 @@ window.onload = () => {
     conteudo.addEventListener("dragleave", dragLeave);
     conteudo.addEventListener("drop", dragDrop);
   }
-
   //Eventos de devolucao cards para o painel
   panel_titulo.addEventListener("dragover", dragOver_Panel);
   panel_titulo.addEventListener("dragenter", dragEnter_Panel);
   panel_titulo.addEventListener("dragleave", dragLeave_Panel);
   panel_titulo.addEventListener("drop", dragDrop_Panel);
-
   // Funçôes dos eventos
-
   function dragStart() {
     setTimeout(() => (this.className = "invisible"), 0);
     currentDOM = this;
@@ -71,9 +68,9 @@ window.onload = () => {
         isComplete();
       }
     }, 250);
-    if (document.querySelector(".titulos").childElementCount < 5) {
-      document.querySelector(".titulos").className += " centralize";
-    }
+    // if (document.querySelector(".titulos").childElementCount < 5) {
+    //   document.querySelector(".titulos").className += " centralize";
+    // }
   }
 
   function corrigirPainel(wrong_cards, id_acertos) {
@@ -175,16 +172,16 @@ window.onload = () => {
   }
   function dragLeave_Panel() {
     this.className = "titulos col-3";
-    if (document.querySelector(".titulos").childElementCount < 5) {
-      document.querySelector(".titulos").className += " centralize";
-    }
+    // if (document.querySelector(".titulos").childElementCount < 5) {
+    //   document.querySelector(".titulos").className += " centralize";
+    // }
   }
   function dragDrop_Panel() {
-    if (document.querySelector(".titulos").childElementCount < 4) {
-      document.querySelector(".titulos").className += " centralize";
-    } else {
-      this.className = "titulos col-3";
-    }
+    // if (document.querySelector(".titulos").childElementCount < 4) {
+    //   document.querySelector(".titulos").className += " centralize";
+    // } else {
+    //   this.className = "titulos col-3";
+    // }
     this.prepend(currentDOM);
     checkConteudos();
   }

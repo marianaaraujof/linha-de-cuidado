@@ -21,12 +21,12 @@
   visibility: hidden;
 }
 .conteudos {
-  overflow-y: auto;
-  overflow-x: scroll;
+  //overflow-y: auto;
+  overflow-x: auto;
   padding: 1em 1em;
   min-width: 80%;
   position: relative;
-  //min-height: 50vh;
+  min-height: 60vh;
   &::-webkit-scrollbar {
     background: #eaeaea !important;
   }
@@ -62,17 +62,13 @@
 
 .empty {
   align-self: center;
-  //margin-top: 3em;
-  background-color: white;
-  //width: 300px;
-  //height: 100px;
   background: #ffffff 0% 0% no-repeat padding-box;
   border: 1px solid #005895;
   //border-radius: 10px;
   text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  position: absolute;
+  top: inherit;
+  left: inherit;
   span {
     opacity: 0.5;
     font-size: 0.7em;

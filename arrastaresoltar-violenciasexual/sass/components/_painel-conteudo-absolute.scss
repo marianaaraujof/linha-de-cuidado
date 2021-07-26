@@ -29,6 +29,16 @@
       left: 380px;
       background-color: #0077b6;
     }
+    &.b10{
+      top: 130px;
+      left: 260px;
+      background-color: #0077b6;
+    }
+    &.b20{
+      top: 130px;
+      left: 390px;
+      background-color: #0077b6;
+    }
     &.b3{
       top: 130px;
       left: 520px;
@@ -42,6 +52,14 @@
     &.b5{
       top: 130px;
       left: 770px;
+      background-color: #90e0ef;
+      span {
+        color: #474954;
+      }
+    }
+    &.b50{
+      top: 130px;
+      left: 800px;
       background-color: #90e0ef;
       span {
         color: #474954;
