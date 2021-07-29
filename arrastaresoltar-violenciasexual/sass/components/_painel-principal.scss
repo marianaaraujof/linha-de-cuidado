@@ -74,10 +74,11 @@
     border: 2px solid #005895;
     border-radius: 10px;
     color: #005895;
-    font-weight: bold;
+    font-weight: bolder;
 
     &:hover {
-      background-color: #d5d5d5;
+      background-color: #005895;
+      color: #eaeaea;
       box-shadow: 0 0.5em 0.5em rgba(0, 0, 0, 0.3);
     }
   }

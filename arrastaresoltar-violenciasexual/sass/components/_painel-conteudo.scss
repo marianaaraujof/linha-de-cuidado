@@ -87,19 +87,23 @@
 }
 
 
-@media screen and (min-width: 1920px){
-  .card-conteudo{
-    min-width: 380px;
-  }
-  .empty{
-    width: 330px;
-  }
-}
-@media screen and (max-width: 1366px){
-  .card-conteudo{
-    min-width: 270px;
-  }
-  .empty{
-    width: 230px;
-  }
+// @media screen and (min-width: 1920px){
+//   .card-conteudo{
+//     min-width: 380px;
+//   }
+//   .empty{
+//     width: 330px;
+//   }
+// }
+ @media screen and (max-width: 1366px){
+   .conteudos {
+     margin: 0 !important;
+     min-height: 65vh;
+   }
+//   .card-conteudo{
+//     min-width: 270px;
+//   }
+//   .empty{
+//     width: 230px;
+//   }
 }

@@ -132,7 +132,7 @@
 @media screen and (max-width: 1285px) {
   .titulos {
     overflow-y: auto;
-    height: 1000px;
+    //height: 1000px;
 
     &::-webkit-scrollbar {
       width: 12px;
@@ -145,16 +145,14 @@
       background: #a5a5a594 !important;
     }
   }
-  .title-card[draggable="true"] {
-    width: 270px !important;
-    padding: 0.9em 0.9em;
-  }
+  // .title-card[draggable="true"] {
+  //   width: 270px !important;
+  //   padding: 0.9em 0.9em;
+  // }
 }
-
-@media screen and (max-width: 1080px) {
-  .title-card[draggable="true"] {
-    width: 230px !important;
-    padding: 0.9em 0.9em;
+@media screen and (max-width: 769px) {
+  .titulos {
+    width: 100%;
   }
 }
 

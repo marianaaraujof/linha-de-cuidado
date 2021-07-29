@@ -43,7 +43,7 @@ window.onload = () => {
   }
   function dragLeave() {
     if (this.className) {
-      this.className = "empty";
+      this.className += " empty";
     }
   }
 
@@ -51,7 +51,7 @@ window.onload = () => {
     countCards();
     if (this.childNodes.length < 4) {
       this.id = "removeSpan";
-      this.className = "";
+      // this.className = "";
       this.append(currentDOM);
       checkConteudos();
     }
