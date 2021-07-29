@@ -12,10 +12,9 @@
     color: #fff;
   }
   padding: .5em .5em;
-
-  &:last-of-type{
-    //visibility: hidden !important;
-  } 
+}
+.win {
+    background-color: #5db85d !important;
 }
 .hidden{
   visibility: hidden;

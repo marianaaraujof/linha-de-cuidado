@@ -238,7 +238,7 @@
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title">Você completou!</h5>
+            <h5 class="modal-title">Parabéns! Você completou!</h5>
             <button
               type="button"
               class="close"
@@ -250,15 +250,6 @@
               <span aria-hidden="false">&times;</span>
             </button>
           </div>
-          <div class="modal-body">
-            <p>
-              Viu só que trabalho importante nós temos para alcançar o
-              aprimoramento do Sistema de Saúde no Brasil? Mas existem
-              estratégias para atingir essa meta, e precisamos investir nelas!
-              Entre obstáculos e estratégias de superação, a luta é para vencer
-              os desafios e conquistar um SUS de qualidade..
-            </p>
-          </div>
           <div class="modal-footer">
             <button
               type="button"
@@ -267,7 +258,7 @@
               onclick="close();"
               id="close1"
             >
-              Close
+              Fechar
             </button>
           </div>
         </div>
@@ -303,7 +294,7 @@
               onclick="close_again();"
               id="close1-again"
             >
-              Close
+              Fechar
             </button>
           </div>
         </div>
@@ -321,7 +312,7 @@
       modal.remove("show");
       modal.setAttribute("aria-hidden", "true");
       modal.setAttribute("style", "display: none");
-      location.reload();
+      //location.reload();
     }
     document.getElementById("close-again").onclick = close_again;
     document.getElementById("close1-again").onclick = close_again;

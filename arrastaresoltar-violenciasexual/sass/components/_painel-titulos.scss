@@ -66,7 +66,7 @@
 .title-card:not([draggable]) {
   margin: 2em auto;
   animation: fade 0.5s linear forwards;
-  background-color: #5db85d;
+  background-color: #5db85d !important;
   border-radius: 20px;
   padding: 1.5em 1.5em;
   span {
@@ -79,7 +79,23 @@
     display: none;
   }
   .title-card {
-    position: absolute;
+    margin: 0;
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 0;
+    width: inherit;
+    span {
+      opacity: 1;
+      font-size: 0.7em;
+    }  
+  }
+  &.b5 {
+    top: 130px;
+    left: 800px;
+  }
+  &.b2 {
+    top: 130px;
+    left: 390px;
   }
 }
 .cont {

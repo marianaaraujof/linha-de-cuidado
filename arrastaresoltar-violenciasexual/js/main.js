@@ -38,12 +38,13 @@ window.onload = () => {
   function dragEnter(e) {
     e.preventDefault();
     if (this.className) {
-      this.className += " hovered";
+      //this.className += " hovered";
     }
+
   }
   function dragLeave() {
     if (this.className) {
-      this.className += " empty";
+     this.className += " empty";
     }
   }
 
@@ -83,7 +84,7 @@ window.onload = () => {
       vazios.forEach(element => {
         if (id_acertos.indexOf(element.attributes[1].value) < 0) {
           element.id = "";
-          element.className = "empty";
+          //element.className = "empty";
           cnt_acertos--;
         }
       });
@@ -143,6 +144,11 @@ window.onload = () => {
       titulos.forEach(element => {
         element.removeAttribute("draggable");
       });
+      let verdes = document.querySelectorAll(".card-conteudo.empty");
+      console.log(verdes);
+      verdes.forEach (element => {
+        element.style.backgroundColor = "#5db85d";
+      });
       let modal = document.querySelector("#myModal");
       modal.className += " show";
       modal.setAttribute("aria-hidden", "false");
@@ -153,7 +159,7 @@ window.onload = () => {
   function checkConteudos() {
     conteudos.forEach(conteudo => {
       if (!conteudo.className && !conteudo.childNodes[3]) {
-        conteudo.className = "empty";
+        //conteudo.className = "empty";
         conteudo.id = "";
       }
     });
