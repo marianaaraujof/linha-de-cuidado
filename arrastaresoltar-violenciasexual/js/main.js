@@ -46,11 +46,10 @@ window.onload = () => {
     // if (this.className) {
     //   this.className += " empty";
     // }
-    var parentDiv = document.getElementById("removeSpan");
-    //var childDiv = document.querySelectorAll(".title-card");
 
-    if (parentDiv.children.length > 1) {
-      parentDiv.id = "";
+    if (document.getElementById("removeSpan").querySelectorAll(".title-card").length < 1) {
+      
+      document.getElementById("removeSpan").id = "";
     }
   }
 

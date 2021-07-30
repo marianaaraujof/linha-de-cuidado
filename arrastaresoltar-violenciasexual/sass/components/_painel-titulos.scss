@@ -75,6 +75,8 @@
   }
 }
 #removeSpan {
+  min-width: 50px;
+  min-height: 40px;
   span[id] {
     display: none;
   }
@@ -98,6 +100,7 @@
     left: 390px;
   }
 }
+
 .cont {
   background: #eaeaea !important;
 }
