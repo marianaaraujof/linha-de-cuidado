@@ -2,7 +2,7 @@
   z-index: 10;
   max-width: 15%;
   overflow-y: auto;
-  min-height: 100vh;
+  //min-height: 100vh;
   position: -webkit-sticky;
   position: sticky;
   top: 50px;
@@ -175,7 +175,7 @@
 @media screen and (max-width: 1920px) {
   .titulos {
     overflow-y: auto;
-    height: 1000px;
+    //height: 1000px;
   }
   .title-card[draggable="true"] {
     max-width: 330px !important;
