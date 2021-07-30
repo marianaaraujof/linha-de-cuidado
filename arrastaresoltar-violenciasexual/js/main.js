@@ -31,7 +31,7 @@ window.onload = () => {
   function dragEnd() {
     this.className = "title-card";
   }
-
+  
   function dragOver(e) {
     e.preventDefault();
   }
@@ -43,8 +43,14 @@ window.onload = () => {
 
   }
   function dragLeave() {
-    if (this.className) {
-     this.className += " empty";
+    // if (this.className) {
+    //   this.className += " empty";
+    // }
+    var parentDiv = document.getElementById("removeSpan");
+    //var childDiv = document.querySelectorAll(".title-card");
+
+    if (parentDiv.children.length > 1) {
+      parentDiv.id = "";
     }
   }
 
@@ -191,4 +197,5 @@ window.onload = () => {
     this.prepend(currentDOM);
     checkConteudos();
   }
+
 };
