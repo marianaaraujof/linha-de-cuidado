@@ -89,6 +89,7 @@
     span {
       opacity: 1;
       font-size: 0.7em;
+      color: #023e8a;
     }  
   }
   &.b5 {
@@ -98,6 +99,12 @@
   &.b2 {
     top: 130px;
     left: 390px;
+  }
+  &.d2 span {
+    color: #fff;
+  }
+  &.d3 span {
+    color: #fff;
   }
 }
 

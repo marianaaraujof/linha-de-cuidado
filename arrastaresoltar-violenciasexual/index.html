@@ -19,8 +19,12 @@
     </nav>
     <section class="mainPanel px-3">
       <div>
-        <div class="ml-5 d-flex">
+        <div class="ml-5 d-flex justify-content-between align-items-baseline">
           <h4 class="panel-title">Associe as colunas</h4>
+          <button type="button"
+          class="open"
+          onclick="openModal();"
+          id="modal3">Está com dificuldade? Que tal relembrar?</button>
         </div>
         <hr class="h-line" />
         <div class="ml-5 score-panel">
@@ -233,6 +237,9 @@
   
       </section>
       </section>
+      <section class="footer">
+        <p>Fonte: (MAGALHÃES, 2011, Apud BRASIL, 2010). </p>
+      </section>
     </section>
     <div class="modal" tabindex="-1" role="dialog" id="myModal">
       <div class="modal-dialog" role="document">
@@ -283,7 +290,8 @@
           </div>
           <div class="modal-body">
             <p>
-              Você ainda não acertou todas..
+              Você ainda não acertou todas.
+              Tente novamente.
             </p>
           </div>
           <div class="modal-footer">
@@ -300,6 +308,181 @@
         </div>
       </div>
     </div>
+
+    <div class="modal" tabindex="-3" role="dialog" id="checkMap">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Reveja o mapa</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+              onclick="close_three();"
+              id="close3"
+            >
+              <span aria-hidden="false">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <section class="conteudos" style="margin-left: 7em;">
+              <div class="titulo1">
+                  <span>
+                      <h2>Tipo de violência</h2>
+                  </span>
+              </div>
+              <div class="titulo2">
+                  <span>
+                      <h2>Natureza da violência</h2>
+                  </span>
+              </div>
+              <div class="card-conteudo a1">
+                  <span>
+                      <p>Autoprovocada</p>
+                  </span>
+              </div>
+              <div class="card-conteudo a2">
+                  <span>
+                      <p>Interpessoal</p>
+                  </span>
+              </div>
+              <div class="card-conteudo a3">
+                  <span>
+                      <p>Coletiva</p>
+                  </span>
+              </div>
+              <div class="card-conteudo b10">
+                  <span>
+                      <p>Tentativa de suicídio</p>
+                  </span>
+              </div>
+              <div class="card-conteudo b20">
+                  <span>
+                      <p>Suicídio</p>
+                  </span>
+              </div>
+              <div class="card-conteudo b3">
+                  <span>
+                      <p>Intrafamiliar</p>
+                  </span>
+              </div>
+              <div class="card-conteudo b4">
+                  <span>
+                      <p>Comunitária</p>
+                  </span>
+              </div>
+              <div class="card-conteudo b50">
+                  <span>
+                      <p>Social</p>
+                  </span>
+              </div>
+              <div class="card-conteudo b6">
+                  <span>
+                      <p>Política</p>
+                  </span>
+              </div>
+              <div class="card-conteudo b7">
+                  <span>
+                      <p>Econômica</p>
+                  </span>
+              </div>
+              <div class="card-conteudo c1">
+                  <span>
+                      <p>Criança Adolescente</p>
+                  </span>
+              </div>
+              <div class="card-conteudo c2">
+                  <span>
+                      <p>Parceiro íntimo</p>
+                  </span>
+              </div>
+              <div class="card-conteudo c3">
+                  <span>
+                      <p>Pessoa + velha</p>
+                  </span>
+              </div>
+              <div class="card-conteudo c4">
+                  <span>
+                      <p>Conhecido</p>
+                  </span>
+              </div>
+              <div class="card-conteudo c5">
+                  <span>
+                      <p>Estranho</p>
+                  </span>
+              </div>
+              <div class="card-conteudo d1">
+                  <span>
+                      <p>Física</p>
+                  </span>
+              </div>
+              <div class="card-conteudo d2">
+                  <span>
+                      <p>Sexual</p>
+                  </span>
+              </div>
+              <div class="card-conteudo d3">
+                  <span>
+                      <p>Psicológica</p>
+                  </span>
+              </div>
+              <div class="card-conteudo d4">
+                  <span>
+                      <p>Negligência/ abandono</p>
+                  </span>
+              </div>
+              <span class="square s10"></span>
+              <span class="square s11"></span>
+              <span class="square s12"></span>
+              <span class="square s13"></span>
+              <span class="square s14"></span>
+              <span class="square s15"></span>
+              <span class="square s16"></span>
+              <span class="square s17"></span>
+              <span class="square s18"></span>
+              <span class="square s19"></span>
+      
+      
+              <span class="square s22"></span>
+              <span class="square s23"></span>
+              <span class="square s24"></span>
+              <span class="square s25"></span>
+              <span class="square s26"></span>
+              <span class="square s27"></span>
+              <span class="square s28"></span>
+              <span class="square s29"></span>
+      
+              <span class="square s30"></span>
+              <span class="square s31"></span>
+              <span class="square s32"></span>
+              <span class="square s33"></span>
+              <span class="square s34"></span>
+              <span class="square s35"></span>
+              <span class="square s36"></span>
+              <span class="square s37"></span>
+              <span class="square s38"></span>
+              <span class="square s39"></span>
+      
+              <span class="square s40"></span>
+              <span class="square s41"></span>
+              <span class="square s42"></span>
+              <span class="square s43"></span>
+              <span class="square s44"></span>
+              <span class="square s45"></span>
+              <span class="square s46"></span>
+              <span class="square s47"></span>
+              <span class="square s48"></span>
+              <span class="square s49"></span>
+      
+      
+          </section>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
   </body>
   <script src="js/jquery/jquery.min.js"></script>
   <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -321,6 +504,22 @@
       modal.className = "modal";
       modal.setAttribute("aria-hidden", "true");
       modal.setAttribute("style", "display: none");
+    }
+
+    //document.getElementById("modal3").onclick = openModal();
+    //document.getElementById("close3").onclick = close_three();
+    function close_three() {
+      const modal = document.querySelector("#checkMap");
+      modal.className = "modal";
+      modal.setAttribute("aria-hidden", "true");
+      modal.setAttribute("style", "display: none");
+    }
+    function openModal() {
+        const modal3 = document.querySelector("#checkMap");
+        console.log(modal3);
+        modal3.className += " show";
+        modal3.setAttribute("aria-hidden", "false");
+        modal3.setAttribute("style", "display: block");
     }
   </script>
 </html>
