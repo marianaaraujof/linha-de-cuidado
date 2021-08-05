@@ -861,4 +861,39 @@
   $.fn.crossword = function(options) {
     return $.crossword(this, options);
   };
+  $(function() {                    
+    $("#verRespostas").click(function() {  
+      $(".respostas-each").toggleClass("active");      
+    });
+    $("#modal1").click(function() {
+      $("#myModalTres").modal("show");
+    });
+    $("#modal2").click(function() {
+      $("#myModalperpetrador").modal("show");
+    });
+    $("#modal3").click(function() {
+      $("#myModalLar").modal("show");
+    });
+    $("#modal41").click(function() {
+      $("#myModalDois").modal("show");
+    });
+    $("#modal42").click(function() {
+      $("#myModalDezessete").modal("show");
+    });
+    $("#modal5").click(function() {
+      $("#myModalAGENDA2030").modal("show");
+    });
+    $("#modal6").click(function() {
+      $("#myModalMeninas").modal("show");
+    });
+    $("#modal7").click(function() {
+      $("#myModalEscola").modal("show");
+    });
+    $("#modal8").click(function() {
+      $("#myModalcdc").modal("show");
+    });
+    $("#modal9").click(function() {
+      $("#myModal2030").modal("show");
+    });
+  });
 })(jQuery);
