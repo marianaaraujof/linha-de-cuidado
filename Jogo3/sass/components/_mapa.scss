@@ -1,0 +1,15 @@
+.mapa {
+    width: 80%;
+    margin: 2em auto;
+
+    img:first-child {
+        width: 80%;
+        position: relative;
+    }
+    img:nth-child(2) {
+        width: 50%;
+        position: absolute;
+        left: 18%;
+        top: 20%;
+    }
+}

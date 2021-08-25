@@ -1,0 +1,12 @@
+// sass --watch sass/main.scss css/main.min.css --style compressed
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap');
+* {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+}
+
+@import "components/header";
+@import "components/pararefletir";
+@import "components/mapa";
+

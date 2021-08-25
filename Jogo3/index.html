@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Linha de cuidado</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.min.css" />
+  </head>
+  <body>
+    <header>
+        <h1>Exemplo de redes de intrassetorial de saúde dialogando com o setor saúde no território</h1>
+    </header>
+    
+    <section class="paraRefletir">
+        <div class="caixaTexto">
+            <div class="titulo">
+                <img src="images/refletir.png" alt="">
+                <h3>Para refletir</h3>
+            </div>
+            <hr>
+            <b><p>Veja a seguir o exemplo de uma rede intrassetorial de saúde, em seguida, tomando como base seu território, marque no mapa quais são os serviços de saúde para o atendimento de crianças e adolescentes e suas famílias em situação de violência sexual no seu território, levando em consideração os seguintes pontos:</p></b>
+            <ul>
+                <li>Cartografia dos serviços de saúde, educação, assistência social, órgãos de proteção e defesa existentes no seu território com o potencial para o atendimento as crianças e adolescentes em situação de violência sexual.</li>
+                <li>Estabelecimentos da educação infantil (exemplo: creche, pré-escola) e escolas de ensino fundamental e médio que podem atuar como ponto da rede de prevenção e proteção de situações
+                    de violência sexual.</li>
+                <li>Estabelecimentos da assistência social (exemplo: Centro de Referência de Assistência Social-CRAS, Centro de Referência Especializado de Assistência Social (CREAS), Centros de Convivência, Programa de Atenção Integral às Famílias (PAIF) e outros; e o Conselho Tutelar, Delegacias especializadas para Crianças e Adolescentes, IML, Ministério Público e outros órgãos do SGD).</li>
+                <li>Equipamentos na comunidade que funcionam como pontos da rede de atenção (exemplo: igrejas, associações de bairro, ONG e outros estabelecimentos).
+                    Agora, realize um breve mapeamento – cartografia dos serviços de saúde existentes no seu território com o potencial para o atendimento às crianças e adolescentes em situação de violência sexual e arraste os ícones em direção ao mapa para indicar a presença desses serviços.</li>
+            </ul>
+        </div>
+    </section>
+    <section class="next">
+        <a href="index2.html">
+            REALIZAR MAPEAMENTO 
+            <img src="images/Seta.png" alt="">
+        </a>
+    </section>
+      
+
+  </body>
+  <script src="js/jquery/jquery.min.js"></script>
+  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    document.getElementById("close").onclick = close;
+    document.getElementById("close1").onclick = close;
+    function close() {
+      const modal = document.querySelector("#myModal");
+      modal.remove("show");
+      modal.setAttribute("aria-hidden", "true");
+      modal.setAttribute("style", "display: none");
+      //location.reload();
+    }
+    document.getElementById("close-again").onclick = close_again;
+    document.getElementById("close1-again").onclick = close_again;
+    function close_again() {
+      const modal = document.querySelector("#myModal-again");
+      modal.className = "modal";
+      modal.setAttribute("aria-hidden", "true");
+      modal.setAttribute("style", "display: none");
+    }
+
+    //document.getElementById("modal3").onclick = openModal();
+    //document.getElementById("close3").onclick = close_three();
+    function close_three() {
+      const modal = document.querySelector("#checkMap");
+      modal.className = "modal";
+      modal.setAttribute("aria-hidden", "true");
+      modal.setAttribute("style", "display: none");
+    }
+    function openModal() {
+        const modal3 = document.querySelector("#checkMap");
+        console.log(modal3);
+        modal3.className += " show";
+        modal3.setAttribute("aria-hidden", "false");
+        modal3.setAttribute("style", "display: block");
+    }
+  </script>
+</html>
