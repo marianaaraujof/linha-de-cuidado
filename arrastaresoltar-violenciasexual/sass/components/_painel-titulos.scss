@@ -93,8 +93,10 @@
     }  
   }
   &.b5 {
+    text-align: center;
+    max-width: 70px;
     top: 130px;
-    left: 800px;
+    left: 790px;
   }
   &.b2 {
     top: 130px;
@@ -105,6 +107,9 @@
   }
   &.d3 span {
     color: #fff;
+  }
+  &.c4 {
+    padding-left: 1px;
   }
 }
 

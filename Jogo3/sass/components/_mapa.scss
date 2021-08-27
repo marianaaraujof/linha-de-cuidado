@@ -13,3 +13,44 @@
         top: 20%;
     }
 }
+.dragoptions {
+    min-width: 35%;
+    background-color: #BCE0FD;
+    display: flex;
+    flex-direction: column;
+    
+    .titulo {
+        background-color: #FFFFFF;
+        margin: 1em;
+        padding: 1em;
+        color: #2A99FB;
+        font-weight: 600;
+    }
+    .blocos {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+    div.bloco {
+        width: 224px;
+        height: 112px;
+        margin-left: 1em;
+        margin-bottom: 1em;
+    }
+    
+}
+.dropplace {
+    //width: 50%;
+    margin: 0 1em;
+    background-image: url("images/Mapa-Redes.png");
+    // background-color: #BCE0FD;
+
+    img {
+        position: relative;
+    }
+    .drops {
+        
+        width: 100%;
+    }
+}
