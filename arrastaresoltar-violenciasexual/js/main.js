@@ -26,34 +26,28 @@ window.onload = () => {
   function dragStart() {
     setTimeout(() => (this.className = "invisible"), 0);
     currentDOM = this;
-    console.log("start");
+    //console.log("start");
   }
 
   function dragEnd() {
-    this.className = "title-card";
     $( this ).parent().id = "removeSpan";
-
-    console.log(this.parent());
+    this.className = "title-card";
+    console.log($( this ).parent());
   }
   
   function dragOver(e) {
     e.preventDefault();
-    console.log("over");
+    //console.log("over");
   }
   function dragEnter(e) {
     e.preventDefault();
     if (this.className) {
       //this.className += " hovered";
     }
-    console.log("enter");
+    //console.log("enter");
 
   }
   function dragLeave() {
-    // if (this.className) {
-    //   this.className += " empty";
-    // }
-    console.log("leave");
-
     if (document.getElementById("removeSpan").querySelectorAll(".title-card").length < 1) {
       
       document.getElementById("removeSpan").id = "";
