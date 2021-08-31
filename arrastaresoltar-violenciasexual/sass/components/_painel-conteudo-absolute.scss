@@ -1,6 +1,6 @@
 .card-conteudo {
     // min-width: 330px;
-    &.a1, &.a2, &.a3, &.b1, &.b2, &.b3, &.b4, &.b5, &.b6, &.b7, &.b10, &.b20, &.b50 {
+    &.a1, &.a2, &.a3, &.b1, &.b2, &.b3, &.b4, &.b5, &.b6, &.b7, &.b10, &.b20, &.c40, &.b50 {
       //border: solid 1px #023e8a;
       background-color: #ffffff;
       color: #023e8a;
@@ -84,6 +84,13 @@
     }
     &.c4{
       //padding-left: 1px;
+      text-align: center;
+      max-width: 60px;
+      top: 180px;
+      left: 670px;
+    }
+    &.c40{
+      padding-left: 1px;
       text-align: center;
       max-width: 60px;
       top: 180px;

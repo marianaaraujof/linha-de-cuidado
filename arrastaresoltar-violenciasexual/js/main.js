@@ -26,26 +26,33 @@ window.onload = () => {
   function dragStart() {
     setTimeout(() => (this.className = "invisible"), 0);
     currentDOM = this;
+    console.log("start");
   }
 
   function dragEnd() {
     this.className = "title-card";
+    $( this ).parent().id = "removeSpan";
+
+    console.log(this.parent());
   }
   
   function dragOver(e) {
     e.preventDefault();
+    console.log("over");
   }
   function dragEnter(e) {
     e.preventDefault();
     if (this.className) {
       //this.className += " hovered";
     }
+    console.log("enter");
 
   }
   function dragLeave() {
     // if (this.className) {
     //   this.className += " empty";
     // }
+    console.log("leave");
 
     if (document.getElementById("removeSpan").querySelectorAll(".title-card").length < 1) {
       
@@ -54,6 +61,7 @@ window.onload = () => {
   }
 
   function dragDrop() {
+    console.log("drop");
     countCards();
     if (this.childNodes.length < 4) {
       this.id = "removeSpan";
