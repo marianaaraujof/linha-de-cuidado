@@ -4,14 +4,11 @@
   padding-bottom: 1.5em;
   border: 1px solid #005895;
   border-radius: 10px;
+  padding: .5em .5em;
   p {
     font-size: 0.7em;
     margin: 0;
   }
-  span {
-    //color: #fff;
-  }
-  padding: .5em .5em;
 }
 .win {
     background-color: #5db85d !important;
@@ -20,19 +17,33 @@
   visibility: hidden;
 }
 .conteudos {
-  //overflow-y: auto;
-  overflow-x: auto;
+  overflow-y: auto;
+  overflow-x: scroll;
   padding: 1em 1em;
   min-width: 80%;
   position: relative;
   min-height: 75vh;
   &::-webkit-scrollbar {
-    background: #eaeaea !important;
+    width: 1px;
+    border: 1px solid #dfdede;
   }
+  
+  &::-webkit-scrollbar-track {
+    border-radius: 0;
+    background: #eaeaea;
+  }
+  
   &::-webkit-scrollbar-thumb {
     border-radius: 8px;
-    background: #eaeaea3b !important;
+    background: #b0b0b0;
   }
+  // &::-webkit-scrollbar {
+  //   background: #eaeaea !important;
+  // }
+  // &::-webkit-scrollbar-thumb {
+  //   border-radius: 8px;
+  //   background: #eaeaea3b !important;
+  // }
 
 }
 .titulo1,.titulo2 {
